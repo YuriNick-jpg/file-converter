@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Arquivos</h1>
+            <p>Faça upload do arquivo e selecione o formato de conversão.</p>
+        </header>
+
+        <main>
+            <form id="fileForm">
+                <label for="file">Selecione o arquivo:</label>
+                <input type="file" id="file" name="file" required>
+
+                <label for="file_format">Tipo de Conversão:</label>
+                <select id="file_format" name="file_format" required>
+                    <option value="pdf_to_docx">PDF para DOCX</option>
+                    <option value="docx_to_pdf">DOCX para PDF</option>
+                    <option value="csv_to_xlsx">CSV para XLSX</option>
+                    <option value="image_conversion">Imagem (JPEG/PNG)</option>
+                </select>
+
+                <button type="submit">Converter</button>
+            </form>
+
+            <div id="result">
+                <!-- O link do arquivo convertido será exibido aqui -->
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Conversor de Arquivos</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
